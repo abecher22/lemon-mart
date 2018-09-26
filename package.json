@@ -1,6 +1,6 @@
 {
   "name": "lemon-mart",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "config": {
     "imageRepo": "abecher/lemon-mart",
     "imageName": "lemon-mart",

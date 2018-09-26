@@ -4,6 +4,7 @@ import { ManagerComponent } from "./manager.component";
 import { MaterialModule } from "../material.module";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
+import { commonTestingModules } from "../common/common.testing";
 
 describe("ManagerComponent", () => {
   let component: ManagerComponent;
@@ -12,7 +13,7 @@ describe("ManagerComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ManagerComponent],
-      imports: [MaterialModule, RouterTestingModule, NoopAnimationsModule],
+      imports: [commonTestingModules],
     }).compileComponents();
   }));
 

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { ReceiptLookupComponent } from "./receipt-lookup.component";
+import { commonTestingModules } from "../../common/common.testing";
 
 describe("ReceiptLookupComponent", () => {
   let component: ReceiptLookupComponent;
@@ -8,6 +9,7 @@ describe("ReceiptLookupComponent", () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [commonTestingModules],
       declarations: [ReceiptLookupComponent],
     }).compileComponents();
   }));

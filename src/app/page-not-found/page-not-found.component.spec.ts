@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { PageNotFoundComponent } from "./page-not-found.component";
+import { commonTestingModules } from "../common/common.testing";
 
 describe("PageNotFoundComponent", () => {
   let component: PageNotFoundComponent;
@@ -8,6 +9,7 @@ describe("PageNotFoundComponent", () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [commonTestingModules],
       declarations: [PageNotFoundComponent],
     }).compileComponents();
   }));
