@@ -10,8 +10,8 @@ ENV BUILD_SCRIPT build:prod
 RUN mkdir -p $SRC_DIR
 WORKDIR $SRC_DIR
 # if necessary, do ssh setup here or copy source code from local or CI environment
-RUN git clone $GIT_REPO .
-# COPY $SRC_CODE_LOCATION .
+# RUN git clone $GIT_REPO .
+COPY $SRC_CODE_LOCATION .
 
 RUN npm ci
 RUN npm run $BUILD_SCRIPT

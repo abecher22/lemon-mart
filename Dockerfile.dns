@@ -1,0 +1,5 @@
+FROM duluca/minimal-node-build-env:8.11.2
+
+RUN apk add --no-cache \
+  dig \
+  tcpdump
